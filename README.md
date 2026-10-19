@@ -8,7 +8,52 @@
 ![Tinkercad](https://img.shields.io/badge/Tinkercad-1477D1?style=flat-square&logo=autodesk&logoColor=white)
 ![arduino-cli](https://img.shields.io/badge/arduino--cli-1.5-00979D?style=flat-square)
 
-> 오늘 배운 개념은 [STUDY_NOTES.md](STUDY_NOTES.md)에 정리했습니다.
+> 자세한 설명과 코드 예시는 [STUDY_NOTES.md](STUDY_NOTES.md)에 정리했습니다.
+
+---
+
+## 오늘의 학습 키워드
+
+### MCU · OS · GPIO
+
+| 키워드 | 한 줄 정리 |
+|---|---|
+| **MCU** | CPU·메모리·입출력 핀이 칩 하나에 들어 있는 작은 컴퓨터. 우노의 MCU는 ATmega328P |
+| **OS** | PC는 운영체제가 여러 프로그램을 관리하지만, 우노에는 OS가 없고 업로드한 프로그램 하나만 실행 (`setup()` 한 번 → `loop()` 무한 반복) |
+| **GPIO** | 코드로 입력·출력을 정할 수 있는 범용 핀. `pinMode()`로 방향을 정함 |
+
+### 입력과 출력
+
+| 구분 | 동작 | 함수 | 값 |
+|---|---|---|---|
+| **디지털 출력** | 핀을 5V 또는 GND(0V)로 만든다 | `digitalWrite()` | `HIGH` / `LOW` |
+| **디지털 입력** | 같은 노드의 전압을 읽고, 5V에 가까운지 0V에 가까운지 판단한다 | `digitalRead()` | 1 / 0 |
+| **아날로그 입력** | 같은 노드의 전압을 숫자로 읽는다 (ADC, 10비트) | `analogRead()` | 0 ~ 1023 |
+| **아날로그 출력** | PWM(펄스 폭 변조)으로 켜진 시간 비율을 바꿔 아날로그 값을 표현한다 | `analogWrite()` | 0 ~ 255 |
+
+### 회로 결선
+
+| 부품 | 결선 | 스케치 |
+|---|---|---|
+| **가변저항** | 양 끝 다리 → 5V, GND / 가운데 다리 → A0 | [pot_led](pot_led/pot_led.ino) |
+| **LED** | 핀 → 220Ω → LED 긴 다리(+) / 짧은 다리(−) → GND | [TrafficLight](TrafficLight/TrafficLight.ino) |
+| **버튼 (풀업)** | 핀 → 10kΩ → 5V, 버튼 → GND · 평소 `HIGH`, 누르면 `LOW` | [STUDY_NOTES §4](STUDY_NOTES.md#4-버튼-입력-풀업-풀다운-내부-풀업) |
+| **버튼 (풀다운)** | 핀 → 10kΩ → GND, 버튼 → 5V · 평소 `LOW`, 누르면 `HIGH` | [STUDY_NOTES §4](STUDY_NOTES.md#4-버튼-입력-풀업-풀다운-내부-풀업) |
+| **버튼 (내부 풀업)** | `INPUT_PULLUP` + 버튼 → GND · 외부 저항 필요 없음 | [ButtonRead](ButtonRead/ButtonRead.ino) |
+
+### 버튼을 정확하게 읽는 방법
+
+| 키워드 | 한 줄 정리 | 스케치 |
+|---|---|---|
+| **디바운싱** | 접점이 튕기는 채터링을 `millis()`로 50ms 동안 기다려 걸러낸다 | [button_count](button_count/button_count.ino) |
+| **상태 변화 감지** | 현재값과 과거값을 비교해 `HIGH → LOW`로 바뀐 순간만 잡는다 | [button_click](button_click/button_click.ino) |
+| **인터럽트** | D2·D3 핀 신호가 바뀌는 순간 ISR을 바로 실행한다 (`attachInterrupt`) | [button_interrupt](button_interrupt/button_interrupt.ino) |
+
+### 네오픽셀
+
+| 키워드 | 한 줄 정리 | 스케치 |
+|---|---|---|
+| **네오픽셀** | 신호선 하나(DIN)로 RGB LED 여러 개를 각각 제어. `Adafruit_NeoPixel` 라이브러리 사용 | [neopixel_gauge](neopixel_gauge/neopixel_gauge.ino) |
 
 ---
 
