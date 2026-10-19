@@ -1,0 +1,6 @@
+# Original phone photos/videos (contain location metadata); cleaned copies live in assets/
+/*.jpg
+/*.jpeg
+/*.png
+/*.mp4
+/*.mov
