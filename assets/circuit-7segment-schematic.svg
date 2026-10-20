@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 630" width="820" height="630"><style>text { font-family: Consolas, "D2Coding", monospace; } .k { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; } .note { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-size: 12px; font-weight: 600; fill: #2a302e; } .pin { font-size: 15px; font-weight: 700; } .seg { font-size: 16px; font-weight: 700; } .val { font-size: 12px; fill: #5b6662; } .badge { font-size: 14px; font-weight: 700; fill: #ffffff; } .ink { stroke: #1c2321; fill: none; stroke-width: 2.5; }</style><rect width="820" height="630" fill="#ffffff"></rect>
+        <!-- Arduino block -->
+        <rect x="30" y="40" width="120" height="530" rx="8" fill="#0e6874"></rect>
+        <text x="90" y="30" text-anchor="middle" class="k" style="font-size:14px;font-weight:700">Arduino Uno</text>
+        <g class="pin" text-anchor="end" style="fill:#ffffff">
+          <text x="140" y="85">D2</text><text x="140" y="135">D3</text><text x="140" y="185">D4</text>
+          <text x="140" y="235">D5</text><text x="140" y="285">D6</text><text x="140" y="335">D7</text>
+          <text x="140" y="385">D8</text><text x="140" y="455">D10</text><text x="140" y="515">D11</text>
+          <text x="140" y="560">GND</text>
+        </g>
+
+        <!-- 5161AS box -->
+        <rect x="330" y="50" width="250" height="380" rx="10" fill="#fbf3f2" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 4"></rect>
+        <text x="455" y="40" text-anchor="middle" class="k" style="font-size:14px;font-weight:700;fill:#c0392b">5161AS (공통 캐소드)</text>
+
+        <!-- Common cathode bus -->
+        <line x1="520" y1="80" x2="520" y2="430" stroke="#1c2321" stroke-width="3"></line>
+
+        <!-- Segment rows: y, color, pin label, segment, 5161AS pin -->
+        <g stroke-width="3.5" fill="none">
+          <path d="M150 80 H200 M260 80 H316 M344 80 H390 M418 80 H520" stroke="#d6453d"></path>
+          <path d="M150 130 H200 M260 130 H316 M344 130 H390 M418 130 H520" stroke="#e8772e"></path>
+          <path d="M150 180 H200 M260 180 H316 M344 180 H390 M418 180 H520" stroke="#c99400"></path>
+          <path d="M150 230 H200 M260 230 H316 M344 230 H390 M418 230 H520" stroke="#2f9e5b"></path>
+          <path d="M150 280 H200 M260 280 H316 M344 280 H390 M418 280 H520" stroke="#1f8fa6"></path>
+          <path d="M150 330 H200 M260 330 H316 M344 330 H390 M418 330 H520" stroke="#3b5bd8"></path>
+          <path d="M150 380 H200 M260 380 H316 M344 380 H390 M418 380 H520" stroke="#8b5cf6"></path>
+        </g>
+        <!-- 330 ohm resistors -->
+        <g fill="#ffffff" stroke="#1c2321" stroke-width="2">
+          <rect x="200" y="70" width="60" height="20" rx="2"></rect><rect x="200" y="120" width="60" height="20" rx="2"></rect>
+          <rect x="200" y="170" width="60" height="20" rx="2"></rect><rect x="200" y="220" width="60" height="20" rx="2"></rect>
+          <rect x="200" y="270" width="60" height="20" rx="2"></rect><rect x="200" y="320" width="60" height="20" rx="2"></rect>
+          <rect x="200" y="370" width="60" height="20" rx="2"></rect>
+        </g>
+        <g class="val" text-anchor="middle">
+          <text x="230" y="64">330Ω</text><text x="230" y="114">330Ω</text><text x="230" y="164">330Ω</text>
+          <text x="230" y="214">330Ω</text><text x="230" y="264">330Ω</text><text x="230" y="314">330Ω</text><text x="230" y="364">330Ω</text>
+        </g>
+        <!-- 5161AS pin badges on the box edge -->
+        <g fill="#c0392b">
+          <circle cx="330" cy="80" r="14"></circle><circle cx="330" cy="130" r="14"></circle><circle cx="330" cy="180" r="14"></circle>
+          <circle cx="330" cy="230" r="14"></circle><circle cx="330" cy="280" r="14"></circle><circle cx="330" cy="330" r="14"></circle>
+          <circle cx="330" cy="380" r="14"></circle>
+        </g>
+        <g class="badge" text-anchor="middle">
+          <text x="330" y="85">7</text><text x="330" y="135">6</text><text x="330" y="185">4</text>
+          <text x="330" y="235">2</text><text x="330" y="285">1</text><text x="330" y="335">9</text><text x="330" y="385">10</text>
+        </g>
+        <!-- Segment LEDs -->
+        <g fill="#ff6b5e" stroke="#1c2321" stroke-width="1.5">
+          <polygon points="390,68 390,92 416,80"></polygon><polygon points="390,118 390,142 416,130"></polygon>
+          <polygon points="390,168 390,192 416,180"></polygon><polygon points="390,218 390,242 416,230"></polygon>
+          <polygon points="390,268 390,292 416,280"></polygon><polygon points="390,318 390,342 416,330"></polygon>
+          <polygon points="390,368 390,392 416,380"></polygon>
+        </g>
+        <g stroke="#1c2321" stroke-width="3">
+          <line x1="418" y1="68" x2="418" y2="92"></line><line x1="418" y1="118" x2="418" y2="142"></line>
+          <line x1="418" y1="168" x2="418" y2="192"></line><line x1="418" y1="218" x2="418" y2="242"></line>
+          <line x1="418" y1="268" x2="418" y2="292"></line><line x1="418" y1="318" x2="418" y2="342"></line>
+          <line x1="418" y1="368" x2="418" y2="392"></line>
+        </g>
+        <g class="seg">
+          <text x="440" y="74">A</text><text x="440" y="124">B</text><text x="440" y="174">C</text>
+          <text x="440" y="224">D</text><text x="440" y="274">E</text><text x="440" y="324">F</text><text x="440" y="374">G</text>
+        </g>
+        <g fill="#1c2321">
+          <circle cx="520" cy="80" r="4"></circle><circle cx="520" cy="130" r="4"></circle><circle cx="520" cy="180" r="4"></circle>
+          <circle cx="520" cy="230" r="4"></circle><circle cx="520" cy="280" r="4"></circle><circle cx="520" cy="330" r="4"></circle>
+          <circle cx="520" cy="380" r="4"></circle>
+        </g>
+
+        <!-- COM pins 3 and 8 to GND -->
+        <path d="M520 430 V448 M500 448 H540 M500 448 V470 M540 448 V470 M500 498 V520 M540 498 V520 M500 520 H540 M520 520 V600" class="ink" stroke-width="3"></path>
+        <circle cx="500" cy="484" r="14" fill="#1c2321"></circle><circle cx="540" cy="484" r="14" fill="#1c2321"></circle>
+        <text x="500" y="489" text-anchor="middle" style="font-size:14px;font-weight:700;fill:#ffffff">3</text>
+        <text x="540" y="489" text-anchor="middle" style="font-size:14px;font-weight:700;fill:#ffffff">8</text>
+        <text x="560" y="489" class="k" style="font-size:13px;font-weight:700">COM (둘 다 GND)</text>
+
+        <!-- Button: D10 -> switch -> GND -->
+        <path d="M150 450 H226 M290 450 H350 V600" class="ink" stroke="#3b7dd8" style="stroke:#3b7dd8" stroke-width="3.5"></path>
+        <circle cx="230" cy="450" r="5" fill="#ffffff" stroke="#1c2321" stroke-width="2"></circle>
+        <circle cx="286" cy="450" r="5" fill="#ffffff" stroke="#1c2321" stroke-width="2"></circle>
+        <line x1="233" y1="447" x2="282" y2="430" class="ink"></line>
+        <line x1="258" y1="438" x2="258" y2="416" class="ink"></line>
+        <line x1="246" y1="416" x2="270" y2="416" class="ink" stroke-width="3"></line>
+        <text x="258" y="476" text-anchor="middle" class="k val">푸시 버튼 (INPUT_PULLUP)</text>
+
+        <!-- LED: D11 -> 220 ohm -> LED -> GND -->
+        <path d="M150 510 H180 M240 510 H262 M290 510 H322 V600" class="ink" style="stroke:#c2417a" stroke-width="3.5"></path>
+        <rect x="180" y="500" width="60" height="20" rx="2" fill="#ffffff" stroke="#1c2321" stroke-width="2"></rect>
+        <text x="210" y="540" text-anchor="middle" class="val">220Ω</text>
+        <polygon points="262,498 262,522 288,510" fill="#ff6b5e" stroke="#1c2321" stroke-width="1.5"></polygon>
+        <line x1="290" y1="498" x2="290" y2="522" stroke="#1c2321" stroke-width="3"></line>
+        <path d="M272 494 L282 484 M276 484 H282 V490" class="ink" stroke-width="1.5"></path>
+        <text x="276" y="540" text-anchor="middle" class="k val">LED</text>
+
+        <!-- GND rail -->
+        <path d="M150 556 H170 V600 H560" class="ink" stroke-width="3.5"></path>
+        <g fill="#1c2321"><circle cx="322" cy="600" r="4"></circle><circle cx="350" cy="600" r="4"></circle><circle cx="520" cy="600" r="4"></circle></g>
+        <path d="M560 590 V610 M568 594 V606 M576 598 V602" class="ink"></path>
+        <text x="590" y="606" class="k" style="font-size:13px;font-weight:700">GND</text>
+      </svg>

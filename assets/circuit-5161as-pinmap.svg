@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330"><style>text { font-family: Consolas, "D2Coding", monospace; } .k { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; } .note { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-size: 12px; font-weight: 600; fill: #2a302e; } .pin { font-size: 15px; font-weight: 700; } .seg { font-size: 16px; font-weight: 700; } .val { font-size: 12px; fill: #5b6662; } .badge { font-size: 14px; font-weight: 700; fill: #ffffff; } .ink { stroke: #1c2321; fill: none; stroke-width: 2.5; }</style><rect width="600" height="330" fill="#ffffff"></rect>
+        <rect x="200" y="50" width="200" height="230" rx="8" fill="#2a2e33"></rect>
+        <g fill="#ff4b3e">
+          <rect x="250" y="80" width="90" height="12" rx="6"></rect>
+          <rect x="342" y="94" width="12" height="70" rx="6"></rect>
+          <rect x="342" y="174" width="12" height="70" rx="6"></rect>
+          <rect x="250" y="246" width="90" height="12" rx="6"></rect>
+          <rect x="236" y="174" width="12" height="70" rx="6"></rect>
+          <rect x="236" y="94" width="12" height="70" rx="6"></rect>
+          <rect x="250" y="163" width="90" height="12" rx="6"></rect>
+          <circle cx="368" cy="254" r="6"></circle>
+        </g>
+        <g style="font-size:15px;font-weight:700;fill:#ffd9d6" text-anchor="middle">
+          <text x="295" y="112">A</text><text x="326" y="134">B</text><text x="326" y="214">C</text>
+          <text x="295" y="238">D</text><text x="264" y="214">E</text><text x="264" y="134">F</text><text x="295" y="157">G</text>
+        </g>
+
+        <!-- Top pins 10..6 -->
+        <g stroke="#9aa09d" stroke-width="4">
+          <line x1="220" y1="50" x2="220" y2="30"></line><line x1="260" y1="50" x2="260" y2="30"></line><line x1="300" y1="50" x2="300" y2="30"></line>
+          <line x1="340" y1="50" x2="340" y2="30"></line><line x1="380" y1="50" x2="380" y2="30"></line>
+          <line x1="220" y1="280" x2="220" y2="300"></line><line x1="260" y1="280" x2="260" y2="300"></line><line x1="300" y1="280" x2="300" y2="300"></line>
+          <line x1="340" y1="280" x2="340" y2="300"></line><line x1="380" y1="280" x2="380" y2="300"></line>
+        </g>
+        <g text-anchor="middle" style="font-size:13px;font-weight:700">
+          <text x="220" y="22">10</text><text x="260" y="22">9</text><text x="300" y="22">8</text><text x="340" y="22">7</text><text x="380" y="22">6</text>
+          <text x="220" y="318">1</text><text x="260" y="318">2</text><text x="300" y="318">3</text><text x="340" y="318">4</text><text x="380" y="318">5</text>
+        </g>
+        <!-- Function labels -->
+        <g class="k" style="font-size:13px;font-weight:700">
+          <text x="30" y="36">위쪽 줄</text>
+          <text x="30" y="306">아래쪽 줄</text>
+        </g>
+        <g style="font-size:13px;font-weight:700">
+          <text x="420" y="24" style="fill:#8b5cf6">10 G</text><text x="470" y="24" style="fill:#3b5bd8">9 F</text>
+          <text x="420" y="44">8 COM</text><text x="490" y="44" style="fill:#d6453d">7 A</text><text x="530" y="44" style="fill:#e8772e">6 B</text>
+          <text x="420" y="300" style="fill:#1f8fa6">1 E</text><text x="462" y="300" style="fill:#2f9e5b">2 D</text><text x="504" y="300">3 COM</text>
+          <text x="420" y="320" style="fill:#c99400">4 C</text><text x="462" y="320" style="fill:#7a7f7d">5 DP (미연결)</text>
+        </g>
+      </svg>

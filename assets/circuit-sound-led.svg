@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" width="700" height="450"><style>text { font-family: Consolas, "D2Coding", monospace; } .k { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; } .note { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-size: 12px; font-weight: 600; fill: #2a302e; } .lbl { fill: #2a302e; font-size: 11px; } .pinlbl { fill: #ffffff; font-size: 12px; font-weight: 700; } .mod { fill: #ffffff; font-size: 11px; font-weight: 700; }</style><rect width="700" height="450" fill="#ffffff"></rect>
+        <defs>
+          <pattern id="holes" x="10" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <rect x="7" y="7" width="6" height="6" rx="1" fill="#b9bfbc"></rect>
+          </pattern>
+        </defs>
+
+        <!-- Arduino header -->
+        <rect x="30" y="16" width="640" height="64" rx="8" fill="#0e6874"></rect>
+        <text x="44" y="38" class="pinlbl" style="font-weight:500">Arduino Uno</text>
+        <g>
+          <circle cx="140" cy="68" r="6" fill="#ffffff"></circle><text x="140" y="56" text-anchor="middle" class="pinlbl">D9</text>
+          <circle cx="280" cy="68" r="6" fill="#ffffff"></circle><text x="280" y="56" text-anchor="middle" class="pinlbl">D11</text>
+          <circle cx="420" cy="68" r="6" fill="#ffffff"></circle><text x="420" y="56" text-anchor="middle" class="pinlbl">GND</text>
+          <circle cx="520" cy="68" r="6" fill="#ffffff"></circle><text x="520" y="56" text-anchor="middle" class="pinlbl">A0</text>
+          <circle cx="560" cy="68" r="6" fill="#ffffff"></circle><text x="560" y="56" text-anchor="middle" class="pinlbl">GND</text>
+          <circle cx="600" cy="68" r="6" fill="#ffffff"></circle><text x="600" y="56" text-anchor="middle" class="pinlbl">5V</text>
+          <circle cx="640" cy="68" r="6" fill="#ffffff"></circle><text x="640" y="56" text-anchor="middle" class="pinlbl">D2</text>
+        </g>
+
+        <!-- Breadboard -->
+        <rect x="30" y="112" width="440" height="320" rx="8" fill="#f3f2ee" stroke="#c9ccca" stroke-width="1.5"></rect>
+        <rect x="50" y="140" width="400" height="100" fill="url(#holes)"></rect>
+        <rect x="40" y="241" width="420" height="18" fill="#e2e1dc"></rect>
+        <rect x="50" y="260" width="400" height="100" fill="url(#holes)"></rect>
+        <rect x="50" y="380" width="400" height="20" fill="url(#holes)"></rect>
+        <line x1="50" y1="410" x2="450" y2="410" stroke="#2f6fd0" stroke-width="2"></line>
+        <text x="456" y="424" text-anchor="end" class="lbl" style="fill:#2f6fd0">− 레일 = GND</text>
+        <g class="lbl" text-anchor="middle">
+          <text x="40" y="154">a</text><text x="40" y="234">e</text>
+          <text x="40" y="274">f</text><text x="40" y="354">j</text>
+          <text x="140" y="132">5</text><text x="280" y="132">12</text><text x="420" y="132">19</text>
+        </g>
+
+        <!-- Wires to breadboard -->
+        <g stroke-width="5" stroke-linecap="round">
+          <line x1="140" y1="68" x2="140" y2="150" stroke="#d6453d"></line>
+          <line x1="280" y1="68" x2="280" y2="150" stroke="#2f9e5b"></line>
+          <line x1="420" y1="68" x2="420" y2="390" stroke="#2a302e"></line>
+        </g>
+        <g fill="#2a302e">
+          <circle cx="140" cy="150" r="4"></circle><circle cx="280" cy="150" r="4"></circle><circle cx="420" cy="390" r="4"></circle>
+        </g>
+
+        <!-- LEDs across the gap -->
+        <g stroke="#7a7f7d" stroke-width="2.5">
+          <line x1="140" y1="230" x2="140" y2="270"></line>
+          <line x1="280" y1="230" x2="280" y2="270"></line>
+        </g>
+        <circle cx="140" cy="250" r="13" fill="#e8493f" stroke="#9b2a24" stroke-width="1.5"></circle>
+        <circle cx="280" cy="250" r="13" fill="#3fb36b" stroke="#1f6e40" stroke-width="1.5"></circle>
+        <g class="lbl" style="font-weight:700">
+          <text x="160" y="228">+ 긴 다리 (e5)</text>
+          <text x="160" y="282">− 짧은 다리 (f5)</text>
+        </g>
+        <text x="140" y="200" text-anchor="middle" class="note">빨강</text>
+        <text x="280" y="200" text-anchor="middle" class="note">초록</text>
+
+        <!-- Resistors -->
+        <line x1="140" y1="350" x2="140" y2="390" stroke="#7a7f7d" stroke-width="2.5"></line>
+        <rect x="133" y="358" width="14" height="24" rx="5" fill="#d9b98a" stroke="#8c6d3f"></rect>
+        <line x1="280" y1="350" x2="280" y2="390" stroke="#7a7f7d" stroke-width="2.5"></line>
+        <rect x="273" y="358" width="14" height="24" rx="5" fill="#d9b98a" stroke="#8c6d3f"></rect>
+        <text x="160" y="374" class="lbl">220Ω (j5 → − 레일)</text>
+
+        <!-- Wires to sound sensor -->
+        <g stroke-width="5" stroke-linecap="round">
+          <line x1="520" y1="68" x2="520" y2="176" stroke="#8b5cf6"></line>
+          <line x1="560" y1="68" x2="560" y2="176" stroke="#2a302e"></line>
+          <line x1="600" y1="68" x2="600" y2="176" stroke="#e8772e"></line>
+          <line x1="640" y1="68" x2="640" y2="176" stroke="#3b7dd8"></line>
+        </g>
+
+        <!-- Sound sensor module -->
+        <rect x="495" y="176" width="170" height="160" rx="6" fill="#1d4fa0"></rect>
+        <g fill="#d8d8d8">
+          <rect x="515" y="172" width="10" height="10"></rect><rect x="555" y="172" width="10" height="10"></rect>
+          <rect x="595" y="172" width="10" height="10"></rect><rect x="635" y="172" width="10" height="10"></rect>
+        </g>
+        <text x="520" y="200" text-anchor="middle" class="mod">AO</text>
+        <text x="560" y="200" text-anchor="middle" class="mod">G</text>
+        <text x="600" y="200" text-anchor="middle" class="mod">+</text>
+        <text x="640" y="200" text-anchor="middle" class="mod">DO</text>
+        <rect x="512" y="222" width="34" height="34" rx="3" fill="#2f6fd0" stroke="#bcd3f5"></rect>
+        <circle cx="529" cy="239" r="9" fill="#e9eef7"></circle>
+        <line x1="523" y1="239" x2="535" y2="239" stroke="#5c6b80" stroke-width="2"></line>
+        <text x="529" y="270" text-anchor="middle" class="mod" style="font-weight:500;font-size:9px">감도 나사</text>
+        <circle cx="605" cy="290" r="26" fill="#c9cdd2" stroke="#8f959b" stroke-width="2"></circle>
+        <circle cx="605" cy="290" r="18" fill="#2a2e33"></circle>
+        <text x="605" y="330" text-anchor="middle" class="mod" style="font-weight:500;font-size:9px">마이크</text>
+        <circle cx="640" cy="232" r="4" fill="#ff5a4f"></circle>
+        <circle cx="640" cy="250" r="4" fill="#ff5a4f"></circle>
+        <text x="580" y="356" text-anchor="middle" class="note">소리 센서 모듈</text>
+      </svg>

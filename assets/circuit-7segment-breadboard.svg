@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 570" width="960" height="570"><style>text { font-family: Consolas, "D2Coding", monospace; } .k { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; } .note { font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-size: 12px; font-weight: 600; fill: #2a302e; } .pin { font-size: 15px; font-weight: 700; } .seg { font-size: 16px; font-weight: 700; } .val { font-size: 12px; fill: #5b6662; } .badge { font-size: 14px; font-weight: 700; fill: #ffffff; } .ink { stroke: #1c2321; fill: none; stroke-width: 2.5; }</style><rect width="960" height="570" fill="#ffffff"></rect>
+        <defs>
+          <pattern id="bbholes" x="41" y="191" width="18" height="18" patternUnits="userSpaceOnUse">
+            <rect x="6" y="6" width="6" height="6" rx="1" fill="#b9bfbc"></rect>
+          </pattern>
+        </defs>
+
+        <!-- Board -->
+        <rect x="30" y="140" width="920" height="300" rx="8" fill="#f3f2ee" stroke="#c9ccca" stroke-width="1.5"></rect>
+        <rect x="41" y="155" width="900" height="18" fill="url(#bbholes)"></rect>
+        <line x1="41" y1="148" x2="941" y2="148" stroke="#2f6fd0" stroke-width="2"></line>
+        <rect x="41" y="191" width="900" height="90" fill="url(#bbholes)"></rect>
+        <rect x="36" y="282" width="910" height="16" fill="#e2e1dc"></rect>
+        <rect x="41" y="299" width="900" height="90" fill="url(#bbholes)"></rect>
+        <rect x="41" y="407" width="900" height="18" fill="url(#bbholes)"></rect>
+        <line x1="41" y1="432" x2="941" y2="432" stroke="#2f6fd0" stroke-width="2"></line>
+        <g style="font-size:11px;font-weight:700;fill:#2f6fd0">
+          <text x="36" y="168" text-anchor="end">−</text><text x="36" y="420" text-anchor="end">−</text>
+        </g>
+        <g style="font-size:10px;font-weight:700;fill:#5b6662" text-anchor="middle">
+          <text x="944" y="204">a</text><text x="944" y="240">c</text><text x="944" y="276">e</text>
+          <text x="944" y="312">f</text><text x="944" y="348">h</text><text x="944" y="384">j</text>
+        </g>
+
+        <!-- Display jumpers (white halo under each wire) -->
+        <g fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M68 200 V86 H806 V200"></path><path d="M122 200 V102 H824 V200"></path>
+          <path d="M338 200 V118 H770 V200"></path><path d="M392 200 V134 H752 V200"></path>
+          <path d="M176 200 V36 H900 V468 H806 V380"></path><path d="M230 200 V52 H885 V458 H770 V380"></path>
+          <path d="M284 200 V68 H870 V448 H752 V380"></path>
+        </g>
+        <g fill="none" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M68 200 V86 H806 V200" stroke="#d6453d"></path>
+          <path d="M122 200 V102 H824 V200" stroke="#e8772e"></path>
+          <path d="M338 200 V118 H770 V200" stroke="#3b5bd8"></path>
+          <path d="M392 200 V134 H752 V200" stroke="#8b5cf6"></path>
+          <path d="M176 200 V36 H900 V468 H806 V380" stroke="#c99400"></path>
+          <path d="M230 200 V52 H885 V458 H770 V380" stroke="#2f9e5b"></path>
+          <path d="M284 200 V68 H870 V448 H752 V380" stroke="#1f8fa6"></path>
+        </g>
+        <g class="k" style="font-size:11px;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:4px;stroke-linejoin:round">
+          <text x="74" y="82" style="fill:#d6453d">A → 7번</text>
+          <text x="128" y="98" style="fill:#e8772e">B → 6번</text>
+          <text x="344" y="114" style="fill:#3b5bd8">F → 9번</text>
+          <text x="398" y="130" style="fill:#8b5cf6">G → 10번</text>
+          <text x="182" y="32" style="fill:#c99400">C → 4번</text>
+          <text x="236" y="48" style="fill:#2f9e5b">D → 2번</text>
+          <text x="290" y="64" style="fill:#1f8fa6">E → 1번</text>
+        </g>
+
+        <!-- 330 ohm resistors f -> b across the gap -->
+        <g stroke="#7a7f7d" stroke-width="2.5">
+          <line x1="68" y1="218" x2="68" y2="308"></line><line x1="122" y1="218" x2="122" y2="308"></line>
+          <line x1="176" y1="218" x2="176" y2="308"></line><line x1="230" y1="218" x2="230" y2="308"></line>
+          <line x1="284" y1="218" x2="284" y2="308"></line><line x1="338" y1="218" x2="338" y2="308"></line>
+          <line x1="392" y1="218" x2="392" y2="308"></line><line x1="554" y1="218" x2="554" y2="308"></line>
+        </g>
+        <g fill="#d9b98a" stroke="#8c6d3f">
+          <rect x="62" y="248" width="12" height="30" rx="5"></rect><rect x="116" y="248" width="12" height="30" rx="5"></rect>
+          <rect x="170" y="248" width="12" height="30" rx="5"></rect><rect x="224" y="248" width="12" height="30" rx="5"></rect>
+          <rect x="278" y="248" width="12" height="30" rx="5"></rect><rect x="332" y="248" width="12" height="30" rx="5"></rect>
+          <rect x="386" y="248" width="12" height="30" rx="5"></rect><rect x="548" y="248" width="12" height="30" rx="5"></rect>
+        </g>
+        <text x="80" y="244" style="font-size:10px;font-weight:700;fill:#5b6662">330Ω</text>
+        <text x="566" y="244" style="font-size:10px;font-weight:700;fill:#5b6662">220Ω</text>
+        <g fill="#2a302e">
+          <circle cx="68" cy="200" r="3"></circle><circle cx="122" cy="200" r="3"></circle><circle cx="176" cy="200" r="3"></circle>
+          <circle cx="230" cy="200" r="3"></circle><circle cx="284" cy="200" r="3"></circle><circle cx="338" cy="200" r="3"></circle>
+          <circle cx="392" cy="200" r="3"></circle>
+        </g>
+
+        <!-- 5161AS straddling the gap, columns 40-44 -->
+        <rect x="741" y="246" width="94" height="88" rx="5" fill="#2a2e33"></rect>
+        <g fill="#ff4b3e">
+          <rect x="773" y="256" width="28" height="5" rx="2"></rect><rect x="802" y="262" width="5" height="26" rx="2"></rect>
+          <rect x="802" y="292" width="5" height="26" rx="2"></rect><rect x="773" y="319" width="28" height="5" rx="2"></rect>
+          <rect x="767" y="292" width="5" height="26" rx="2"></rect><rect x="767" y="262" width="5" height="26" rx="2"></rect>
+          <rect x="773" y="287" width="28" height="5" rx="2"></rect><circle cx="815" cy="322" r="2.5"></circle>
+        </g>
+        <g fill="#d8d8d8" stroke="#2a2e33" stroke-width="1">
+          <circle cx="752" cy="236" r="4"></circle><circle cx="770" cy="236" r="4"></circle><circle cx="788" cy="236" r="4"></circle>
+          <circle cx="806" cy="236" r="4"></circle><circle cx="824" cy="236" r="4"></circle>
+          <circle cx="752" cy="344" r="4"></circle><circle cx="770" cy="344" r="4"></circle><circle cx="788" cy="344" r="4"></circle>
+          <circle cx="806" cy="344" r="4"></circle><circle cx="824" cy="344" r="4"></circle>
+        </g>
+        <g style="font-size:10px;font-weight:700;fill:#ffffff" text-anchor="middle">
+          <text x="752" y="258">10</text><text x="824" y="258">6</text>
+          <text x="752" y="330">1</text><text x="824" y="330">5</text>
+        </g>
+        <text x="788" y="362" text-anchor="middle" class="k" style="font-size:11px;font-weight:700">5161AS</text>
+
+        <!-- COM: 42a -> top rail, 42j -> bottom rail; rails joined at column 50 -->
+        <g fill="none" stroke="#2a302e" stroke-width="4" stroke-linecap="round">
+          <path d="M788 200 V164"></path><path d="M788 380 V416"></path><path d="M932 164 V416"></path>
+        </g>
+        <g fill="#2a302e">
+          <circle cx="788" cy="200" r="3"></circle><circle cx="788" cy="164" r="3"></circle>
+          <circle cx="788" cy="380" r="3"></circle><circle cx="788" cy="416" r="3"></circle>
+          <circle cx="932" cy="164" r="3"></circle><circle cx="932" cy="416" r="3"></circle>
+          <circle cx="806" cy="200" r="3"></circle><circle cx="824" cy="200" r="3"></circle><circle cx="770" cy="200" r="3"></circle>
+          <circle cx="752" cy="200" r="3"></circle><circle cx="806" cy="380" r="3"></circle><circle cx="770" cy="380" r="3"></circle>
+          <circle cx="752" cy="380" r="3"></circle>
+        </g>
+        <text x="796" y="186" class="k" style="font-size:11px;font-weight:700">COM 8번</text>
+        <text x="796" y="400" class="k" style="font-size:11px;font-weight:700">COM 3번</text>
+
+        <!-- Button at columns 23/25 -->
+        <rect x="434" y="262" width="60" height="56" rx="4" fill="#3a3f3d"></rect>
+        <circle cx="464" cy="290" r="13" fill="#1f2321" stroke="#5c625f" stroke-width="2"></circle>
+        <g fill="#9aa09d">
+          <circle cx="446" cy="272" r="3.5"></circle><circle cx="482" cy="272" r="3.5"></circle>
+          <circle cx="446" cy="308" r="3.5"></circle><circle cx="482" cy="308" r="3.5"></circle>
+        </g>
+        <path d="M446 416 V380" stroke="#2a302e" stroke-width="4" stroke-linecap="round"></path>
+        <circle cx="446" cy="380" r="3" fill="#2a302e"></circle><circle cx="446" cy="416" r="3" fill="#2a302e"></circle>
+
+        <!-- LED: anode 29a, cathode 28a; GND rail -> 28e -->
+        <g stroke="#7a7f7d" stroke-width="2.5">
+          <line x1="536" y1="200" x2="540" y2="186"></line><line x1="554" y1="200" x2="550" y2="186"></line>
+        </g>
+        <circle cx="545" cy="180" r="10" fill="#e8493f" stroke="#9b2a24" stroke-width="1.5"></circle>
+        <path d="M536 416 V272" stroke="#2a302e" stroke-width="4" stroke-linecap="round"></path>
+        <circle cx="536" cy="272" r="3" fill="#2a302e"></circle><circle cx="536" cy="416" r="3" fill="#2a302e"></circle>
+
+        <!-- Arduino -->
+        <rect x="30" y="482" width="620" height="76" rx="8" fill="#0e6874"></rect>
+        <text x="44" y="550" style="font-size:11px;fill:#ffffff" class="k">Arduino Uno</text>
+        <g stroke-width="5" stroke-linecap="round">
+          <line x1="68" y1="496" x2="68" y2="380" stroke="#d6453d"></line>
+          <line x1="122" y1="496" x2="122" y2="380" stroke="#e8772e"></line>
+          <line x1="176" y1="496" x2="176" y2="380" stroke="#c99400"></line>
+          <line x1="230" y1="496" x2="230" y2="380" stroke="#2f9e5b"></line>
+          <line x1="284" y1="496" x2="284" y2="380" stroke="#1f8fa6"></line>
+          <line x1="338" y1="496" x2="338" y2="380" stroke="#3b5bd8"></line>
+          <line x1="392" y1="496" x2="392" y2="380" stroke="#8b5cf6"></line>
+          <line x1="482" y1="496" x2="482" y2="380" stroke="#3b7dd8"></line>
+          <line x1="554" y1="496" x2="554" y2="380" stroke="#c2417a"></line>
+          <line x1="608" y1="496" x2="608" y2="416" stroke="#2a302e"></line>
+        </g>
+        <g fill="#ffffff">
+          <circle cx="68" cy="496" r="5"></circle><circle cx="122" cy="496" r="5"></circle><circle cx="176" cy="496" r="5"></circle>
+          <circle cx="230" cy="496" r="5"></circle><circle cx="284" cy="496" r="5"></circle><circle cx="338" cy="496" r="5"></circle>
+          <circle cx="392" cy="496" r="5"></circle><circle cx="482" cy="496" r="5"></circle><circle cx="554" cy="496" r="5"></circle>
+          <circle cx="608" cy="496" r="5"></circle>
+        </g>
+        <g style="font-size:12px;font-weight:700;fill:#ffffff" text-anchor="middle">
+          <text x="68" y="522">D2</text><text x="122" y="522">D3</text><text x="176" y="522">D4</text><text x="230" y="522">D5</text>
+          <text x="284" y="522">D6</text><text x="338" y="522">D7</text><text x="392" y="522">D8</text><text x="482" y="522">D10</text>
+          <text x="554" y="522">D11</text><text x="608" y="522">GND</text>
+        </g>
+        <g fill="#2a302e">
+          <circle cx="68" cy="380" r="3"></circle><circle cx="122" cy="380" r="3"></circle><circle cx="176" cy="380" r="3"></circle>
+          <circle cx="230" cy="380" r="3"></circle><circle cx="284" cy="380" r="3"></circle><circle cx="338" cy="380" r="3"></circle>
+          <circle cx="392" cy="380" r="3"></circle><circle cx="482" cy="380" r="3"></circle><circle cx="554" cy="380" r="3"></circle>
+          <circle cx="608" cy="416" r="3"></circle>
+        </g>
+        <g style="font-size:10px;font-weight:700;fill:#5b6662">
+          <text x="72" y="400">2</text><text x="126" y="400">5</text><text x="180" y="400">8</text><text x="234" y="400">11</text>
+          <text x="288" y="400">14</text><text x="342" y="400">17</text><text x="396" y="400">20</text><text x="450" y="400">23</text>
+          <text x="486" y="400">25</text><text x="518" y="400">28</text><text x="558" y="400">29</text>
+        </g>
+      </svg>
